@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		F29940901A6C084100ECF787 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F299408F1A6C084100ECF787 /* main.m */; };
 		F29940931A6C084100ECF787 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F29940921A6C084100ECF787 /* AppDelegate.m */; };
-		F29940961A6C084100ECF787 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29940951A6C084100ECF787 /* ViewController.m */; };
+		F29940961A6C084100ECF787 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = F29940951A6C084100ECF787 /* Home.m */; };
 		F29940991A6C084100ECF787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F29940971A6C084100ECF787 /* Main.storyboard */; };
 		F299409B1A6C084100ECF787 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F299409A1A6C084100ECF787 /* Images.xcassets */; };
 		F299409E1A6C084100ECF787 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F299409C1A6C084100ECF787 /* LaunchScreen.xib */; };
 		F29940AA1A6C084100ECF787 /* ExerciseTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F29940A91A6C084100ECF787 /* ExerciseTableTests.m */; };
+		F29940B61A6C141A00ECF787 /* cellPersonaje.m in Sources */ = {isa = PBXBuildFile; fileRef = F29940B51A6C141A00ECF787 /* cellPersonaje.m */; };
+		F29940BF1A6C18E400ECF787 /* zombie01.png in Resources */ = {isa = PBXBuildFile; fileRef = F29940B81A6C18E400ECF787 /* zombie01.png */; };
+		F29940C01A6C18E400ECF787 /* zombie02.png in Resources */ = {isa = PBXBuildFile; fileRef = F29940B91A6C18E400ECF787 /* zombie02.png */; };
+		F29940C11A6C18E400ECF787 /* zombie03.png in Resources */ = {isa = PBXBuildFile; fileRef = F29940BA1A6C18E400ECF787 /* zombie03.png */; };
+		F29940C21A6C18E400ECF787 /* zombie04.png in Resources */ = {isa = PBXBuildFile; fileRef = F29940BB1A6C18E400ECF787 /* zombie04.png */; };
+		F29940C31A6C18E400ECF787 /* zombie05.png in Resources */ = {isa = PBXBuildFile; fileRef = F29940BC1A6C18E400ECF787 /* zombie05.png */; };
+		F29940C41A6C18E400ECF787 /* zombie06.png in Resources */ = {isa = PBXBuildFile; fileRef = F29940BD1A6C18E400ECF787 /* zombie06.png */; };
+		F29940C51A6C18E400ECF787 /* zombie07.png in Resources */ = {isa = PBXBuildFile; fileRef = F29940BE1A6C18E400ECF787 /* zombie07.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +40,23 @@
 		F299408F1A6C084100ECF787 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F29940911A6C084100ECF787 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F29940921A6C084100ECF787 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F29940941A6C084100ECF787 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F29940951A6C084100ECF787 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F29940941A6C084100ECF787 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		F29940951A6C084100ECF787 /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		F29940981A6C084100ECF787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F299409A1A6C084100ECF787 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F299409D1A6C084100ECF787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F29940A31A6C084100ECF787 /* ExerciseTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExerciseTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F29940A81A6C084100ECF787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F29940A91A6C084100ECF787 /* ExerciseTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableTests.m; sourceTree = "<group>"; };
+		F29940B41A6C141A00ECF787 /* cellPersonaje.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cellPersonaje.h; path = ExerciseTable/cellPersonaje.h; sourceTree = "<group>"; };
+		F29940B51A6C141A00ECF787 /* cellPersonaje.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cellPersonaje.m; path = ExerciseTable/cellPersonaje.m; sourceTree = "<group>"; };
+		F29940B81A6C18E400ECF787 /* zombie01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie01.png; sourceTree = "<group>"; };
+		F29940B91A6C18E400ECF787 /* zombie02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie02.png; sourceTree = "<group>"; };
+		F29940BA1A6C18E400ECF787 /* zombie03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie03.png; sourceTree = "<group>"; };
+		F29940BB1A6C18E400ECF787 /* zombie04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie04.png; sourceTree = "<group>"; };
+		F29940BC1A6C18E400ECF787 /* zombie05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie05.png; sourceTree = "<group>"; };
+		F29940BD1A6C18E400ECF787 /* zombie06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie06.png; sourceTree = "<group>"; };
+		F29940BE1A6C18E400ECF787 /* zombie07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie07.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +80,7 @@
 		F29940811A6C084100ECF787 = {
 			isa = PBXGroup;
 			children = (
+				F29940B31A6C0EDD00ECF787 /* Cuztomized */,
 				F299408C1A6C084100ECF787 /* ExerciseTable */,
 				F29940A61A6C084100ECF787 /* ExerciseTableTests */,
 				F299408B1A6C084100ECF787 /* Products */,
@@ -81,10 +99,11 @@
 		F299408C1A6C084100ECF787 /* ExerciseTable */ = {
 			isa = PBXGroup;
 			children = (
+				F29940B71A6C18E400ECF787 /* images */,
 				F29940911A6C084100ECF787 /* AppDelegate.h */,
 				F29940921A6C084100ECF787 /* AppDelegate.m */,
-				F29940941A6C084100ECF787 /* ViewController.h */,
-				F29940951A6C084100ECF787 /* ViewController.m */,
+				F29940941A6C084100ECF787 /* Home.h */,
+				F29940951A6C084100ECF787 /* Home.m */,
 				F29940971A6C084100ECF787 /* Main.storyboard */,
 				F299409A1A6C084100ECF787 /* Images.xcassets */,
 				F299409C1A6C084100ECF787 /* LaunchScreen.xib */,
@@ -117,6 +136,29 @@
 				F29940A81A6C084100ECF787 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F29940B31A6C0EDD00ECF787 /* Cuztomized */ = {
+			isa = PBXGroup;
+			children = (
+				F29940B41A6C141A00ECF787 /* cellPersonaje.h */,
+				F29940B51A6C141A00ECF787 /* cellPersonaje.m */,
+			);
+			name = Cuztomized;
+			sourceTree = "<group>";
+		};
+		F29940B71A6C18E400ECF787 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F29940B81A6C18E400ECF787 /* zombie01.png */,
+				F29940B91A6C18E400ECF787 /* zombie02.png */,
+				F29940BA1A6C18E400ECF787 /* zombie03.png */,
+				F29940BB1A6C18E400ECF787 /* zombie04.png */,
+				F29940BC1A6C18E400ECF787 /* zombie05.png */,
+				F29940BD1A6C18E400ECF787 /* zombie06.png */,
+				F29940BE1A6C18E400ECF787 /* zombie07.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +210,7 @@
 				TargetAttributes = {
 					F29940891A6C084100ECF787 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = QXF33N93KH;
 					};
 					F29940A21A6C084100ECF787 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -201,7 +244,14 @@
 			files = (
 				F29940991A6C084100ECF787 /* Main.storyboard in Resources */,
 				F299409E1A6C084100ECF787 /* LaunchScreen.xib in Resources */,
+				F29940C31A6C18E400ECF787 /* zombie05.png in Resources */,
+				F29940C11A6C18E400ECF787 /* zombie03.png in Resources */,
+				F29940C51A6C18E400ECF787 /* zombie07.png in Resources */,
+				F29940BF1A6C18E400ECF787 /* zombie01.png in Resources */,
 				F299409B1A6C084100ECF787 /* Images.xcassets in Resources */,
+				F29940C01A6C18E400ECF787 /* zombie02.png in Resources */,
+				F29940C21A6C18E400ECF787 /* zombie04.png in Resources */,
+				F29940C41A6C18E400ECF787 /* zombie06.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F29940961A6C084100ECF787 /* ViewController.m in Sources */,
+				F29940961A6C084100ECF787 /* Home.m in Sources */,
+				F29940B61A6C141A00ECF787 /* cellPersonaje.m in Sources */,
 				F29940931A6C084100ECF787 /* AppDelegate.m in Sources */,
 				F29940901A6C084100ECF787 /* main.m in Sources */,
 			);
@@ -343,9 +394,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ExerciseTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -353,9 +407,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ExerciseTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

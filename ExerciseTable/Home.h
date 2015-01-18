@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface Home : UIViewController<UITableViewDelegate, UITableViewDataSource>
+//Buttons
 
+//Labels
+
+//Tables
+@property (weak, nonatomic) IBOutlet UITableView *tblMain;
+
+//Views
 
 @end
 
