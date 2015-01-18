@@ -12,6 +12,7 @@
 //Buttons
 
 //Labels
+@property (strong, nonatomic) IBOutlet UILabel *lblNombreSeleccionado;
 
 //Tables
 @property (weak, nonatomic) IBOutlet UITableView *tblMain;

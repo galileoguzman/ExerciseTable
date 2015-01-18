@@ -101,8 +101,28 @@ NSMutableArray *edadArray;
     cell.lblSubtitulo.text = roleArray[indexPath.row];
     cell.lblEdad.text = edadArray[indexPath.row];
     cell.imgPersonaje.image = [UIImage imageNamed:imagenesArray[indexPath.row]];
-    
+    //Agregar un borde fino al UIImage
+    cell.imgPersonaje.layer.borderWidth = 3.0f;
+    cell.imgPersonaje.layer.borderColor = [UIColor purpleColor].CGColor;
+    //Agregar borde redondeado al UIImage
+    cell.imgPersonaje.layer.cornerRadius = cell.imgPersonaje.frame.size.width / 2;
+    cell.imgPersonaje.clipsToBounds = YES;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    self.lblNombreSeleccionado.text = nombreArray[indexPath.row];
+    NSString *strTemp;
+    
+    
+    strTemp = [self.lblNombreSeleccionado.text stringByAppendingString:@" fué seleccionado"];
+    if (indexPath.row == 3) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Titulo de la alerta"
+                                                        message:strTemp delegate:nil cancelButtonTitle:@"Enterado"otherButtonTitles:nil, nil];
+        
+        [alert show];
+    }
 }
 
 
