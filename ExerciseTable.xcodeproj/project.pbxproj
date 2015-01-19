@@ -22,6 +22,9 @@
 		F29940C31A6C18E400ECF787 /* zombie05.png in Resources */ = {isa = PBXBuildFile; fileRef = F29940BC1A6C18E400ECF787 /* zombie05.png */; };
 		F29940C41A6C18E400ECF787 /* zombie06.png in Resources */ = {isa = PBXBuildFile; fileRef = F29940BD1A6C18E400ECF787 /* zombie06.png */; };
 		F29940C51A6C18E400ECF787 /* zombie07.png in Resources */ = {isa = PBXBuildFile; fileRef = F29940BE1A6C18E400ECF787 /* zombie07.png */; };
+		F29940C71A6C3A1900ECF787 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29940C61A6C3A1900ECF787 /* Accounts.framework */; };
+		F29940C91A6C3A2800ECF787 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29940C81A6C3A2800ECF787 /* Social.framework */; };
+		F29940CB1A6C3A2F00ECF787 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F29940CA1A6C3A2F00ECF787 /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		F29940BC1A6C18E400ECF787 /* zombie05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie05.png; sourceTree = "<group>"; };
 		F29940BD1A6C18E400ECF787 /* zombie06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie06.png; sourceTree = "<group>"; };
 		F29940BE1A6C18E400ECF787 /* zombie07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie07.png; sourceTree = "<group>"; };
+		F29940C61A6C3A1900ECF787 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		F29940C81A6C3A2800ECF787 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		F29940CA1A6C3A2F00ECF787 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29940CB1A6C3A2F00ECF787 /* Twitter.framework in Frameworks */,
+				F29940C91A6C3A2800ECF787 /* Social.framework in Frameworks */,
+				F29940C71A6C3A1900ECF787 /* Accounts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +89,9 @@
 		F29940811A6C084100ECF787 = {
 			isa = PBXGroup;
 			children = (
+				F29940CA1A6C3A2F00ECF787 /* Twitter.framework */,
+				F29940C81A6C3A2800ECF787 /* Social.framework */,
+				F29940C61A6C3A1900ECF787 /* Accounts.framework */,
 				F29940B31A6C0EDD00ECF787 /* Cuztomized */,
 				F299408C1A6C084100ECF787 /* ExerciseTable */,
 				F29940A61A6C084100ECF787 /* ExerciseTableTests */,

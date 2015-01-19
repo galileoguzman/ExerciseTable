@@ -14,6 +14,8 @@ NSMutableArray *imagenesArray;
 NSMutableArray *roleArray;
 NSMutableArray *edadArray;
 
+int         iCounter = 0;
+
 @interface Home ()
 
 @end
@@ -110,20 +112,52 @@ NSMutableArray *edadArray;
     return cell;
 }
 
+/****************************************************
+ Alert View Functions
+ ****************************************************/
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSLog(@"Botones presionados");
+    
+    if(buttonIndex ==0)
+    {
+        NSLog(@"Boton Cancelar");
+    }
+    else if(buttonIndex ==1)
+    {
+        NSLog(@"Boton Guardar");
+    }
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.lblNombreSeleccionado.text = nombreArray[indexPath.row];
     NSString *strTemp;
     
+    iCounter = (int)indexPath.row;
     
     strTemp = [self.lblNombreSeleccionado.text stringByAppendingString:@" fué seleccionado"];
     if (indexPath.row == 3) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Titulo de la alerta"
-                                                        message:strTemp delegate:nil cancelButtonTitle:@"Enterado"otherButtonTitles:nil, nil];
+                                                        message:strTemp delegate:self cancelButtonTitle:@"Cancelar"otherButtonTitles:@"Guardar", nil];
         
         [alert show];
     }
 }
 
 
+- (IBAction)btnShareSender:(id)sender {
+    NSString *strMsg;
+    NSArray *activityItems;
+    UIImage *imgShare;
+    UIActivityViewController *actVC;
+    imgShare = [UIImage imageNamed:imagenesArray[iCounter]];
+    //strMsg = @"Hola desde mi clase de iOS de la UAG en Oaxaca =)";
+    strMsg = [@"Fué seleccionado" stringByAppendingString:nombreArray[iCounter]];
+    activityItems = @[imgShare, strMsg];
+    //Init activity view controller
+    actVC = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+    actVC.excludedActivityTypes = [NSArray arrayWithObjects:UIActivityTypePrint, UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard, UIActivityTypeAirDrop, nil];
+    [self presentViewController:actVC animated:YES completion:nil];
+}
 @end

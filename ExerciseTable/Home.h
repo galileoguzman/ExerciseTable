@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Accounts/ACAccount.h>
+#import <Social/Social.h>
+#import <Twitter/Twitter.h>
+
 
 @interface Home : UIViewController<UITableViewDelegate, UITableViewDataSource>
 //Buttons
@@ -18,6 +22,10 @@
 @property (weak, nonatomic) IBOutlet UITableView *tblMain;
 
 //Views
+
+//Actions
+- (IBAction)btnShareSender:(id)sender;
+
 
 @end
 
